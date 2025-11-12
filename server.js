@@ -6,7 +6,7 @@ dotenv.config()
 
 
 const app=express()
-
+const require = express()
 app.use(cors())
 app.use(express.json())
 mongoose.connect(process.env.MONGO_URL)
